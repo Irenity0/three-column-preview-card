@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+/* 
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+font-family: "Big Shoulders Display", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+*/
+
+
+
+
+* {
+    margin: 0;
+}
+
+.d-f {
+    display: flex;
+}
+
+body {
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.col-container {
+    width: 60%;
+    margin: 8rem auto;
+    border-radius: 0.5rem;
+}
+
+.card {
+    width: 33%;
+    background-color: tomato;
+    padding: 5rem 3rem;
+}
+
+.card1 {
+    background-color: var(--Bright-orange);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.card2 {
+    background-color: var(--Dark-cyan);
+}
+
+.card3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
+}
+
+p {
+    line-height: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.card1 > button {
+    color: var(--Bright-orange);
+}
+
+.card2 > button {
+    color: var(--Dark-cyan);
+}
+
+.card3 > button {
+    color: var(--Very-dark-cyan);
+}
+
+@media screen and (max-width: 768px) {
+    .col-container {
+    width: 80%;
+    margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .col-container {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    }
+}
